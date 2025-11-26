@@ -1,0 +1,12 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "meubanco";
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_errno) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+?>
